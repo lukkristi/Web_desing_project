@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dokumentacija</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Lukas Krištić">
+        <meta name="title" content="Projekt">
+        <meta name="date" content="26.05.2018">
+        <meta name="description" content="Dokumentacija">
+        <link href="css/lukkristi.css" rel="stylesheet" type="text/css">               
+    </head>
+    <body>
+
+        <header>
+
+            <h1 id="pocetak">Dokumentacija</h1>
+            <div class="lijevo" >
+                <p class="grupa">Izbornik
+                    <span class="datum">Datum: 17.03.2018. Vrijeme: 18:30</span>
+                </p>
+                <a class="desno" href="Prijava.php">Prijava</a>
+                <br>
+                <a class="desno" href="Registracija.php">Registracija</a>
+                <div id="Prevodjenje_stranice"></div>
+            </div>
+        </header>
+
+        <div>
+            <nav id="navigacija">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="Prijava.php">Prijava</a></li>
+                    <li><a href="Registracija.php">Registracija</a></li>
+                    <li><a href="Index.php">Početna</a></li>                    
+                    <li><a href="Moderator.php">Moderator</a></li>
+                    <li><a href="Dokumentacija.html">Dokumentacija</a></li>
+                    <li><a href="O_autoru.html">O autoru</a></li>
+                    <li><a href="RegistriraniKorisnik.php">Registrirani korisnik</a></li>                                       
+                </ul>
+            </nav>
+
+            <img id="indexSlika" src="slike/lukas.jpg" alt="indexslika"  style="display: inline-block">
+            <div>
+                <ol type="I" style="display: inline-block">
+                    <li>Lukas</li>
+                    <li>Krištić</li>
+                    <li><a href="https://webmail.foi.hr/webmail/src/webmail.php">lukkristi@foi.hr</a></li>
+                    <li>43434/14-R</li>            
+                </ol>
+            </div>
+        </div>
+        <section class="hotel">
+            <h2 style="color: black;" id="Proizvodi">Dokumentacija</h2>
+            <article>
+                <h3 style="color: black;">Opis projektnog zadatka</h3>
+                <p>Nakon 10 tjedana nastave iz WebDiP-a došao je trenutak kada sami moramo primjeniti stečeni znanje i napraviti funkcionalnu web stranicu. 
+                    Tokom 10 tjedana nastave su pokazane samo osnovne koje ralno i ne pomažu ako ne znate osnovno iz progamiranja. Moja tema je bila napraviti stranicu kao e-booking 
+                    ali tonije glavna tema projekta već oglasi. Dobili smo neke osnovne natuknice i skripte koje bi projekt morao imati kao registracija, prijava, dokumentacija, o nama itd. Ova Web stranica bi 
+                    trebala omogućiti prikaz oglasa registriranih korisnika te pregled statistike oglasa, Prikaz hotela i njohovih soba te moguća rezervacija gdje korisnik prvo šalje zahtjev koji moderator mora 
+                    odobriti.Oglasi se mogu prijaviti iz nekog raztloga(uvredljiv sadržaj, neispravan url itd.) koje moderator može prihvatiti ili zanemariti. Ako moderator blokira oglas taj oglas se više neće
+                    prikazivati. Moderator može unositi vrste oglasa za svoje pozicije koje je zaduže od strane administratora. Administrator može pregledavati dnevnik aktivnosti na stranici (prijava, registracija
+                    unos novi podataka i slicno), pregledstatistike oglasa i korisnika. Na pocetnoj stranici je dozvoljeno pregledavati hotele i slobodne sobe po terminu za ne regidtrirane korisnike. Admin ima sva prava
+                    od moderatora, reg. korisnika, dok moderator samo ima prava od reg. korsnika.
+                                        
+                </p>               
+            </article>
+            <article>
+                <h3>Opis projektong rješenja</h3>
+                <p>
+                    Stranica mora preoznati o kojoj se ulogi radi jer Moderator nebi trebao imati prava kao sto ima administrator tj svaka uloga imas voje funckionalnosti a samo nadređena uloga može koristit od podređenih.
+                    Uz uloge postoje još i dodatne aktivnosti koje se mogu napraviti a to su sql xml injection, prevođenje stranice na neki drugi jezik, pdf za printanje statsitickih podatakniz tablica.
+                    Dosta dijelvoa sam uzeo iz svojih zadaća koje sam radio i to su provjere i validacije kod prijave, cijeli html i css koji sam malo modificirao. Mislim da je dizajn vrlo ugodan jer nebesko plava boja je 
+                    lijepa boja te sa crnim tesktom ne treba puno naprezati oči. Linkovi su sa pozadinom crnom i text je žuti kad se miše prolazi. Postoji za određene medije dizajn zamobitele i tablete koji nije nešto previše uređen 
+                    ali minimalan i čitljiv.
+                </p>               
+            </article>
+            <article>
+                <h3>ERA model</h3>
+                <p>
+                     ERA model je najvazniji element kod svakog projekta jer ako baza nije dobra ili nije najbolje napravljena biti će vam teško raditi tj imat će te velike i zahtjevne upite koji će vam usporiti rad stranice.
+                     Kratak opis ERA modela: Većina slućajeva je 1:N veza iako je nepotrebno u ovom projektu ja sam ipak tako stavio. Imma nekoliko ternarnih veza npr kao kod hotela i korisnika koja mi treba da znam koji
+                     moderator je zadužen za koji hotel, takodjer lokacija na stranici koja biljezi stanicu i lokaciju te trebala bi biti sa korisnikom spojena. Korisnik moze prijaviti oglas uz navodjenje konkretnog razloga.
+                     Svaki oglas mora imati tip oglasa i i an svakoj destinaciji mora biti barem dvije vrste oglasa.Tablica dnevnik nam sluzi za pregled u log aplikacije, tip_korisnika tablica odredjuje o kojoj se ulozi radi 
+                     i tako je zapisana u tablicu korisnik.Oglas ima stupac status koji je 0 te ako moderator odluci da se smije priakzivati onda prelazi u 1 i automatski pocima prikaz.
+                     
+                     
+                  
+                </p>
+                <figure>
+			<img style="width:90%" src="slike/ERAm.png" alt="ERA model" />
+			<figcaption style="text-align:center ">ERA model sustava za Hotel</figcaption>
+		</figure>
+            </article>
+            
+            <article>
+                <h3>Popis skripata i mapa te njihov  opis</h3>
+                <h4>Mapa privatno</h4>
+                <p>
+                     Sadrži 3 skripte .htaccess, .htpasswd i Korisnici.php<br>
+                     .htacces je skripta u kojoj ne dopuštam svakom da vidi datoteke u direktoriju i da ih može otvoriti. Skripta za psotavljanje prava.<br>
+                     .htpasswd je skripta u kojoj se nalazi kriptirana lozinka i korisnicko ime za pristup skripti Korisnici.php<br>
+                     Korisnici.php je skripta koja ispisuje sve korsnike iz baze.
+                </p>
+                
+                
+                <h4>Mapa css</h4>
+                <p>
+                     Sadrži css datoteku lukkristi.css<br>
+                     lukkristi.css je css datoteka u kojoj dizajn stranice i responzivni dizajn
+                     
+                </p>
+                
+                
+                <h4>Mapa slike</h4>
+                <p>
+                     Sadrži 5 slika: <br>
+                     CSS3.png je slika css-a<br>
+                     Era.png je slika Era modela u projektu<br>
+                     HTML5.png je slika html validacije<br>
+                     Navigacijski.jpg je slika navigacijskog dijagrama projekta<br>
+                     luaks.jpg je slika autora projekta
+                </p>               
+                <h4>Administrator.php</h4>
+                <p>
+                     je skripta u kojoj admin može pregledavati dnevnik, pretrazivati po dnevniku, otključavati zaključane korisnike, kreiranje hotela te istom dodati jednog moderatora
+                     može nakadno dodati više moderatora jednom hotelu.
+                </p>               
+                <h4>Baza.class.php</h4>
+                <p>
+                     služi za spajanje na bazu , te izvršavanje upita kao što je SELECT,INSERT i UPDATE koja je preuzeta od kolegija WebDiP sa jednom dodatnom funkcijom. Funkcija ne prima 
+                     nikakvu vrijednost ali računa trenutno vrijeme ako postoji pomak ako ne onda vraća normalno vrijeme.
+                </p>
+                
+                <h4>Index.php</h4>
+                <p>
+                     je skripta koja služi za ne registrirnaog korisnika, koju može prevesti na željeni jezik, pretra#ivati hotele te pregled soba nakon odabira.
+                </p>         
+                
+                <h4>Moderator.php</h4>
+                <p>
+                     Provjerava dali se radi o moderatoru ili administratoru, može unositi sobe za hotele koje je ovlašten, unosi rezervacije za svoje hotele, te može unijeti novu vrstu oglasa.Ako je 
+                     aadministrator onda on može unsoiti sobe za bilo koji hotel. Može prihvaćat nove oglase i blokirati prijavljene oglase.
+                </p>         
+                
+                <h4>O_autoru.html</h4>
+                <p>
+                     je stranica gdje su osnovni podaci o autoru ovog projekta.
+                </p>         
+                <h4>Odjava.php</h4>
+                <p>
+                     služi za dojavu korinika sa stranicce i uništavanje sesije zbog koje više neće moći pristupiti većini stranica
+                </p>         
+                <h4>OtkljucavanjeZakljucavanje.php</h4>
+                <p>
+                     je skripta uz pomoć koje amdinistrator otključava/zaključava korinsčki račun koji je zaključan
+                </p>         
+                
+                <h4>PostaviVrijemeAplikacije.php</h4>
+                <p>
+                     služi za postavljanje virtualnog vremena kojoj samo admin može pristupiti.
+                </p>         
+                
+                <h4>Prijava.php</h4>
+                <p>
+                     Služi za prijavu na stranicu, gdje se svaka uloga raspodjeli na svoju stranicu moderator na moderator.php, korisnik na registriraniKorisnik.php a admin na administrator.php
+                     Prijava ima kolačić koju sprema korisničko ime nakon uspješne prijave, koje ostaje zapamćeno prilikom iduće prijave. Ako se lozinka slucajno unese 3 puta pogrešno račun se zaključava,
+                     kojeg može samo admin otključati. Ima provjere korisnickog imena i link ako je lozinka zaboravljena.
+                </p>         
+                
+                <h4>ProvjeraKorisnika.php</h4>
+                <p>
+                     je skripta koja prima korisnicko ime od registracijskog polaj korisnicko_ime i provjeravaje li postoji takvo korisnicko ime i ispisuje poruku 
+                </p>         
+                
+                <h4>Registracija.php</h4>
+                <p>
+                     ova skripta sluzi za registriranje normalnog korisnika i ima validacije na korisnickoj strani i na starni servera. Provjera da nije ostalo nijendo polje prazno, provjera recaptcha,
+                     email-a, lozinka i ponovljena lozinka moraju iste biti,unos ne dozvoljenih znakova u poljima, funckija koja automatski provjerava jel ima isto korisnicko ime u bazi, salje na mail 
+                     aktivacijski kod.
+                </p>         
+                
+                <h4>RegistriraniKorisnik.php</h4>
+                <p>
+                     je skripta za normalnog korisnika, može vidjeti statistiku svojih oglasa, prijaviti aktivni oglas zbog nekog razloga(url ne radi, neprimjeren sadržaj itd.).
+                </p>
+                
+                <h4>StatistikaKlikova.php</h4>
+                <p>
+                     je skripta kojoj samo administrator može pristupit da vidi statisiku klikova svih oglasa koji su aktivni, može pretraživat, straničit, sortirat.
+                </p>
+                <h4>StatistikaPlacenihOglasa.php</h4>
+                <p>
+                     je skripta kojoj samo administrator može pristupit na kojoj se nalaze dvije tablice koje prikazuju statistiku plaćenih oglasa po tipu, te plaćenih oglasa po korisniku
+                     obje tablice se mogu filtrirati i sortirati.
+                </p>
+                <h4>UnosPomakaUTablicu.php</h4>
+                <p>
+                     je skripta kojoj samo administrator može pristupit, koja služi za unos pomaka u bazu te da se stim vremenom može radit.
+                </p>
+                
+                <h4>ZaboravljenaLozinka.php</h4>
+                <p>
+                     skripta koja služi za slanje nove šifre ako je korisnik svoju zaboravio, prikazuje formu za unos email-a koji provjerava da li postoji takav mail i šalje novu šifru koja se random generira
+                </p>
+                
+                <h4>PrihavtitOglas.php</h4>
+                <p>
+                     skripta koja odobrava oglas nakon sto moderator odabere hoce li ga pustiti, odbit ili blokirat.
+                </p>    
+                
+                <h4>lukkristi.js</h4>
+                <p>
+                     je javascript skripta koju koristim kod registracije. Validacija na korsinickoj strani, korisnicko mora imati 5 znakova, prezime i ime moraju velikim slovom počimati , provjera nedopuštenih znakova "!#,
+                     lozinka mora imati 6 znakova, polja ne smiju ostati prazna.
+                </p>
+                
+                <h4>Navigacijski dijagram</h4>
+                
+                <figure>
+			<img style="width:90%" src="slike/Navigacijski.jpg" alt="Navigacijski dijagram" />
+			<figcaption style="text-align:center ">Navigacijski dijagram</figcaption>
+		</figure>
+            </article>
+            
+            <article>
+                <h3>Popis i opis tehnologija koristenih</h3>
+                
+                <h4>NetBeans</h4>
+                <p>
+                      To je jedina paltforma koju sam koristio tokom izrade projekta. To je open source aplikacija u kojoj možete izradđivati desktop, mobilne i web aplikacije. Ima ekstenzije za html,
+                      css, C, C++, javascript, javadoc i PHP.
+                </p>
+                
+                <h4>MySQL workbench</h4>
+                <p>
+                      Open source aplikacija za izradu ERA modela.
+                </p>   
+            </article>
+            
+            <article>
+                <h3>Popis vanjskih biblioteka</h3>
+                
+                <h4>google.com recaptcha</h4>
+                <p>
+                    Potrebna skripta za korištenje google recaptcha u projektu (Registracija.php).          
+                </p> 
+                
+                <h4>google translate api</h4>
+                <p>
+                    Potrebna skripta za prevođenje početne stranice (Index.php).          
+                </p>   
+            </article>
+            
+            
+        </section>
+
+
+        <footer>
+            <p> 5 sati </p>
+            <figure>
+                <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2017%2Fzadaca_03%2Flukkristi%2Findex.html">
+                    <img src="slike/HTML5.png" width="100" alt="HTML5 validator">
+                </a>
+                <figcaption>HTML5 validator</figcaption>
+            </figure> 
+            <figure>
+                <a href="https://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fbarka.foi.hr%2FWebDiP%2F2017%2Fzadaca_03%2Flukkristi%2Fcss%2Flukkristi.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de">
+                    <img src="slike/CSS3.png" width="100" alt="CSS3 validator">
+                </a>
+                <figcaption>CSS3 validator</figcaption>
+            </figure> 
+            <address><strong>Kontakt: </strong><a href="lukkrsiti.foi.hr">Lukas Krištić</a></address>
+            <p><small>&copy; 2018. L.Krištić</small></p>
+        </footer>
+
+
+    </body>
+</html>

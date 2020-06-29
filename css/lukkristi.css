@@ -1,0 +1,489 @@
+
+article{
+    
+    box-shadow:2px 5px 35px 3px lightsteelblue
+}
+#navigacisjkiDijagram{
+    padding-left: 30%
+}
+footer{
+    clear: both;
+}
+@media screen and (min-width: 1024px){
+    body{
+    
+    background-color: lightcyan;   
+    color: black;
+    font-family: "courier"
+}
+header {
+    background-image:url('slike/pozadinajpg.jpg');
+    background-position: left top;
+    padding-top:5%;
+    background-size: 13.6%;
+    background-color: lightsteelblue;
+    background-repeat: no-repeat;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+.lijevo{
+    background-color: lightsteelblue;
+    overflow: hidden;
+    text-decoration: none;
+}
+.datum{
+    float: right;
+}
+.desno:hover{
+    background-color: #000000;
+    color: white;
+     
+}
+.desno{
+    float: right;
+    text-decoration: none;
+    padding-right: 1%;
+   
+}
+p{
+    background-color: white;
+    font-style: inherit;
+}
+.grupa{
+    text-decoration: underline;
+    font-weight:bold;
+}
+#pocetak{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    font-variant-caps: small-caps;
+    
+}
+a:hover{
+    color: yellow;
+    background-color: #000000;
+}
+
+div > a:hover{
+    color: yellow;
+    
+}
+nav{
+    color: grey;
+}
+#navigacija{
+    float: left;
+}
+#indexSlika{   
+    width: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    
+}
+
+form{
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin:5px;
+    padding: 5px;
+    border: black 2px solid;
+    width:50%;
+   
+}
+nav{
+    width: 250px;
+    
+}
+nav > ul {
+    list-style: none;
+}
+nav > ul li a{
+    display: block;
+    text-transform: uppercase;
+    border-top-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px 35px;
+    border: dotted 1px black;
+    background-color: lightsteelblue;
+    color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav > ul li:first-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav> ul li a:hover{
+    background-color: black;
+    color: white;
+}
+section.hotel{
+    clear: both;
+    font-family: "Times New Roman", Times, serif;
+}
+article{
+    
+    box-shadow:2px 5px 35px 3px lightsteelblue
+}
+
+
+.blokForme{
+    font-weight: bold;
+    background-color: lightsteelblue;
+    
+    background-color: lightsteelblue;
+}
+
+label{
+    display: inline-block;
+    width: 145px;
+    
+} 
+
+/*Klase za bojanje gresaka */
+.pogresno {
+    border: 3px solid red;
+    background-color: red;
+}
+.tocno {
+    border: 2px solid yellow;
+    background-color: yellow;
+}
+}
+
+@media screen and (min-width:650px) and (max-width:1024px){
+    body{
+    
+    background-color: lightcyan;   
+    color: black;
+    font-family: "courier"
+}
+header {
+    background-image:url('slike/pozadinajpg.jpg');
+    background-position: left top;
+    padding-top:5%;
+    background-size: 13.6%;
+    background-color: lightsteelblue;
+    background-repeat: no-repeat;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+.lijevo{
+    background-color: lightsteelblue;
+    overflow: hidden;
+    text-decoration: none;
+}
+.datum{
+    float: right;
+}
+.desno:hover{
+    background-color: #000000;
+    color: white;
+     
+}
+.desno{
+    float: right;
+    text-decoration: none;
+    padding-right: 1%;
+   
+}
+p{
+    background-color: white;
+    font-style: inherit;
+}
+.grupa{
+    text-decoration: underline;
+    font-weight:bold;
+}
+#pocetak{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    font-variant-caps: small-caps;
+    
+}
+a:hover{
+    color: yellow;
+    background-color: #000000;
+}
+
+div > a:hover{
+    color: yellow;
+    
+}
+nav{
+    color: grey;
+}
+#navigacija{
+    float: left;
+}
+#indexSlika{   
+    width: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    
+}
+
+form{
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin:5px;
+    padding: 5px;
+    border: black 2px solid;
+    width:50%;
+   
+}
+nav{
+    width: 250px;
+    
+}
+nav > ul {
+    list-style: none;
+}
+nav > ul li a{
+    display: block;
+    text-transform: uppercase;
+    border-top-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px 35px;
+    border: dotted 1px black;
+    background-color: lightsteelblue;
+    color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav > ul li:first-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav> ul li a:hover{
+    background-color: black;
+    color: white;
+}
+section.hotel{
+    clear: both;
+    font-family: "Times New Roman", Times, serif;
+}
+article{
+    
+    box-shadow:2px 1px 35px 3px lightsteelblue
+}
+
+
+.blokForme{
+    font-weight: bold;
+    background-color: lightsteelblue;
+    
+    background-color: lightsteelblue;
+}
+
+label{
+    display: inline-block;
+    width: 145px;
+    
+} 
+
+/*Klase za bojanje gresaka */
+.pogresno {
+    border: 3px solid red;
+    background-color: red;
+}
+.tocno {
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+table.smanji {
+    table-layout: fixed;
+    width: 100%;    
+}
+
+
+    
+}
+
+@media screen and (max-width:650px){
+    body{
+    
+    background-color: lightcyan;   
+    color: black;
+    font-family: "courier"
+}
+header {
+    background-image:url('slike/pozadinajpg.jpg');
+    background-position: left top;
+    padding-top:5%;
+    background-size: 13.6%;
+    background-color: lightsteelblue;
+    background-repeat: no-repeat;
+}
+h1{
+    color: aqua;
+    text-align: center;
+}
+.lijevo{
+    background-color: lightsteelblue;
+    overflow: hidden;
+    text-decoration: none;
+}
+.datum{
+    float: right;
+}
+.desno:hover{
+    background-color: #000000;
+    color: white;
+     
+}
+.desno{
+    float: right;
+    text-decoration: none;
+    padding-right: 1%;
+   
+}
+p{
+    background-color: white;
+    font-style: inherit;
+}
+.grupa{
+    text-decoration: underline;
+    font-weight:bold;
+}
+#pocetak{
+    color:black;
+    font-size: 30px;
+    text-align: center;
+    font-variant-caps: small-caps;
+    
+}
+a:hover{
+    color: yellow;
+    background-color: #000000;
+}
+
+div > a:hover{
+    color: yellow;
+    
+}
+nav{
+    color: grey;
+}
+#navigacija{
+    float: left;
+}
+#indexSlika{   
+    width: 7%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    
+}
+
+form{
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    margin:5px;
+    padding: 5px;
+    border: black 2px solid;
+    width:50%;
+   
+}
+nav{
+    width: 250px;
+    
+}
+nav > ul {
+    list-style: none;
+}
+nav > ul li a{
+    display: block;
+    text-transform: uppercase;
+    border-top-style: dotted;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px 35px;
+    border: dotted 1px black;
+    background-color: lightsteelblue;
+    color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav > ul li:first-child a{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+nav> ul li a:hover{
+    background-color: black;
+    color: white;
+}
+section.hotel{
+    clear: both;
+    font-family: "Times New Roman", Times, serif;
+}
+article{
+    
+    box-shadow:2px 1px 35px 3px lightsteelblue
+}
+
+
+.blokForme{
+    font-weight: bold;
+    background-color: lightsteelblue;
+    
+    background-color: lightsteelblue;
+}
+
+label{
+    display: inline-block;
+    width: 145px;
+    
+} 
+
+/*Klase za bojanje gresaka */
+.pogresno {
+    border: 3px solid red;
+    background-color: red;
+}
+.tocno {
+    border: 2px solid green;
+    background-color: green;
+}
+
+
+table.smanji {
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+/*    min-width: 500px;*/
+}
+tr{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+div.Responzivni {
+    min-width: 500px;
+}
+}
